@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      max-width: 70vw;
+      margin: auto;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+
+      margin: 0;
+    }
+    
+    h1{
+      text-align: center;
+      padding: 1rem;
+      font-size: 9vw;
+      font-weight: 900;
+      opacity: 0.8;
+      background-color: rgba(214, 214, 78, 0.7);
+    }
+
+.column {
+  column-count: 3;
+  column-gap: 60px;
+  column-rule: 1px solid silver;
+  margin: 3rem 0;
+}
+    
+    h2 {
+      font-size: 4vw;
+      font-weight: 700;
+      letter-spacing: -3px;
+      opacity: 0.8;
+      column-span: all;
+      
+    }
+    
+    h3 {
+      letter-spacing: -.5px;
+      opacity: 0.75;
+      column-span: all;
+      padding: 1rem 0;
+      font-size: calc(18px * 1.618);
+      
+    }
+    
+    .ligaturen {
+      opacity: 0.8;
+      letter-spacing: -0.5px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 1.5;
+      column-span: all;
+    }
+    
+    .kerning {
+      font-size: 18px;
+      line-height: 1.7;
+      opacity: 0.8;
+      /* text-align: justify; */
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Typografie</h1>
+  <section class="column" role="article">
+    <h2>Layout mit Column-Count</h2>
+    <p class="ligaturen">Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.</p>
+    <h3>Column Span - Breitet sich über geamten Spalten aus</h3>
+  <p class="kerning">Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders <b>»Lorem Ipsum«</b>, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden. Und weil Sie nun schon die Güte haben, mich ein paar weitere Sätze lang zu begleiten, möchte ich diese Gelegenheit nutzen, Ihnen nicht nur als Lückenfüller zu dienen, sondern auf etwas hinzuweisen, das es ebenso verdient wahrgenommen zu werden: Webstandards nämlich. Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten aus einer Webseite den größten Nutzen ziehen. Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz funktioniert, aber ebenso gut für den Ausdruck</p>
+
+  </section>
+</body>
+</html>

@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+
+    :root {
+    --color: rgb(228, 189, 233);
+    --color-light: rgba(228, 189, 233, 0.397);
+    --shadow: 2px 2px 10px rgb(79, 33, 85);
+    --shadow-2: 1px 1px 5px rgba(85, 83, 85, 0.37);
+    }
     body {
       max-width: 70vw;
       margin: auto;
@@ -23,7 +30,7 @@
       font-size: 9vw;
       font-weight: 900;
       opacity: 0.8;
-      background-color: rgba(214, 214, 78, 0.7);
+      background-color: var(--color);
       border-bottom-left-radius: 20rem;
       border-bottom-right-radius: 20rem;
     }
@@ -45,12 +52,12 @@
     }
     
     h3 {
-      letter-spacing: -2px;
+      letter-spacing: -1.3px;
       opacity: 0.8;
       column-span: all;
       padding: 1rem 0;
       font-size: calc(18px * 1.618);
-      background-color: rgba(252, 255, 85, 0.507);
+      background-color: var(--color);
       margin-bottom: 2rem;
       padding: 1rem;
       border-radius: 5000px;
@@ -73,6 +80,15 @@
       margin: 0;
       font-family: 'Arial', sans-serif;
     }
+
+    b {
+      display: inline-block;
+      box-shadow: var(--shadow-2);
+      background-color: var(--color-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 16px;
+      text-shadow: var(--shadow);
+    }
     
     </style>
 </head>
@@ -82,7 +98,7 @@
     <h2>Layout mit Column-Count</h2>
     <p class="ligaturen">Dies ist ein Typoblindtext. An ihm kann man sehen, ob alle Buchstaben da sind und wie sie aussehen. Manchmal benutzt man Worte wie Hamburgefonts, Rafgenduks oder Handgloves, um Schriften zu testen. Manchmal Sätze, die alle Buchstaben des Alphabets enthalten - man nennt diese Sätze »Pangrams«.</p>
     <h3>Column Span - Breitet sich über geamten Spalten aus</h3>
-  <p class="kerning">Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders <b>»Lorem Ipsum«</b>, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden. Und weil Sie nun schon die Güte haben, mich ein paar weitere Sätze lang zu begleiten, möchte ich diese Gelegenheit nutzen, Ihnen nicht nur als Lückenfüller zu dienen, sondern auf etwas hinzuweisen, das es ebenso verdient wahrgenommen zu werden: Webstandards nämlich. Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten aus einer Webseite den größten Nutzen ziehen. Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz funktioniert, aber ebenso gut für den Ausdruck</p>
+  <p class="kerning">Überall dieselbe alte Leier. Das Layout ist fertig, der Text lässt auf sich warten. Damit das Layout nun nicht nackt im Raume steht und sich klein und leer vorkommt, springe ich ein: der Blindtext. Genau zu diesem Zwecke erschaffen, immer im Schatten meines großen Bruders <b>»Lorem&nbsp;Ipsum«</b>, freue ich mich jedes Mal, wenn Sie ein paar Zeilen lesen. Denn esse est percipi - Sein ist wahrgenommen werden. Und weil Sie nun schon die Güte haben, mich ein paar weitere Sätze lang zu begleiten, möchte ich diese Gelegenheit nutzen, Ihnen nicht nur als Lückenfüller zu dienen, sondern auf etwas hinzuweisen, das es ebenso verdient wahrgenommen zu werden: Webstandards nämlich. Sehen Sie, Webstandards sind das Regelwerk, auf dem Webseiten aufbauen. So gibt es Regeln für HTML, CSS, JavaScript oder auch XML; Worte, die Sie vielleicht schon einmal von Ihrem Entwickler gehört haben. Diese Standards sorgen dafür, dass alle Beteiligten aus einer Webseite den größten Nutzen ziehen. Im Gegensatz zu früheren Webseiten müssen wir zum Beispiel nicht mehr zwei verschiedene Webseiten für den Internet Explorer und einen anderen Browser programmieren. Es reicht eine Seite, die - richtig angelegt - sowohl auf verschiedenen Browsern im Netz funktioniert, aber ebenso gut für den Ausdruck</p>
 
   </section>
 </body>
